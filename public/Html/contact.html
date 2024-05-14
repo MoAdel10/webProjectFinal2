@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../CSS/contact.css">
+  <link rel="stylesheet" href="../CSS/headfoot.css">
+</head>
+
+<body>
+  <!-- Start Header -->
+  <header>
+    <div class="bg"></div>
+    <div class="container">
+      <a href="/home"><img src="../imgs/MOBLETO.svg" alt="site Logo" class="To"></a>
+      <ol class="pages">
+        <li><a href="/home" class="btn_header navbar">Home</a></li>
+        <li><a href="/services" class="btn_header navbar">Services</a></li>
+        <li><a href="/contact" class="btn_header navbar">Contact</a></li>
+        <li><a href="/about" class="btn_header navbar">About</a></li>
+      </ol>
+      <div class="icons">
+        <span class="user_fill btn_header"><a href="login.html"><img src="../imgs/headcontent/User_fill.svg"
+              alt="user_fill"></a></span>
+        <span class="Search_fill_btn_header"><a href=""><img src="../imgs/headcontent/Search_fill.svg"
+              alt="Search_fill"></a></span>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+  <div class="container">
+
+    <div class="contact-box">
+      <div class="contact-left">
+        <h3>Send your requset</h3>
+        <<form action="/contact" method="POST">
+          <div class="input-row">
+              <div>
+                  <div class="input-group">
+                      <label>Name</label>
+                      <input type="text" placeholder=" Enter Your Name" required name="Name">
+                  </div>
+                  
+                  <div class="input-group">
+                      <label>Phone</label>
+                      <input type="text" placeholder=" Enter Your Number " required name="Phone">
+                  </div>
+              </div>
+              <div>
+                  <div class="input-group">
+                  <label>Email</label>
+                  <input type="email" placeholder=" Enter Your Email" required name="Email">
+              </div>
+              <div class="input-group">
+                  <label>Request</label>
+                  <input type="text" placeholder=" Renew" required name="Request">
+              </div>
+              </div>
+          </div>
+          <label>Massage</label> 
+          <textarea rows="5"placeholder=" Write Your Massage Here (optional)" name="Massage"></textarea>
+          <button type="submit">SEND</button>
+      </form>
+      </div>
+      <div class="contact-right">
+        <h3>Reach us</h3>
+        <table>
+          <tr>
+            <td>emlail</td>
+            <td>OurTeam@gmail.com</td>
+          </tr>
+
+          <tr>
+            <td>Phone</td>
+            <td>0101010101010</td>
+          </tr>
+          <tr>
+            <td>Adress</td>
+            <td>Suaz Canal Universty <br>
+              faculty of computer science
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+    <!-- Start Footer Section -->
+    <div class="contianer">
+      <footer class="footer">
+          <div class="footer-logo">
+              <div>
+                  <span style="color: white; ">MOBLE</span>
+                  <span style="color: #FFB802;">TO</span>
+              </div>
+              <p>Discover the beauty of quality furniture for your home.</p>
+              <div class="email-box">
+                  <input type="email" id="email" placeholder="Enter your email">
+                  <button class="btn" id="clearButton" type="submit">Subscribe</button>
+                  <div class="msg">
+                      <i class='bx bx-check'></i>
+                      <div class="msg_txt">
+                          <h3 style="color: black ;margin-top: -10px;">Success </h3>
+                          <p style="color: grey; margin-top: 40px; margin-left: -60px;">Enjoy our exclusive offers and updates.</p>        
+                      </div>
+                      <i class='bx bx-x close_btn'></i>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-section">
+              <h2>Explore</h2>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          
+          <div class="footer-section">
+              <h2>Categories</h2>
+              <ul>
+                  <li><a href="#">Living Room</a></li>
+                  <li><a href="#">Bedroom</a></li>
+                  <li><a href="#">Dining</a></li>
+                  <li><a href="#">Office</a></li>
+              </ul>
+          </div>
+          
+          <div class="footer-contact">
+              <h2>Contact Us</h2>
+              <p>123 Furniture Street<br>Portsaid, Egy<br>Email: info@TeamTitans.com</p>
+          </div>
+      </footer>
+  </div>
+
+  <!-- End Footer Section -->
+    <script src="../JS/js1.js"></script>
+    <script src="../JS/Js.js"></script>
+</body>
+</html>

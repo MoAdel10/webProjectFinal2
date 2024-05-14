@@ -1,0 +1,488 @@
+@import url(https://db.onlinewebfonts.com/c/c56ea8aca8b3b1f84bcb7365c6ae4af0?family=Kalameh+Bold); 
+
+:root {
+    --white: #d6d2d2;
+    --main-color: rgb(240, 212, 177);
+    --secondary-color: #FFD059;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kalameh Bold", sans-serif;
+    overflow-x: hidden; /*khalf*/
+    background-color: rgb(251, 227, 195);
+}
+
+.bg {
+    background-image: url(../images/Rectangle\ 1.png);
+    position: absolute; 
+    width: 100vw;
+    height: 890px;
+    z-index: -2;
+}
+
+.container {
+    padding: 30px 10px;
+    margin: -5px auto;
+}
+
+@media (min-width: 768px){
+
+    .container {
+        width: 750px;
+    }
+
+}
+
+@media (min-width: 992px){
+
+    .container {
+        width: 970px;
+    }
+
+}
+
+@media (min-width: 1200px){
+
+    .container {
+        width: 1170px;
+    }
+
+}
+/* Start Header */
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container>a {
+    margin-top: 6px;
+}
+
+header .container .pages {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header .container .pages li {
+    margin-top: 1px;
+    padding:  0 10px;
+    text-wrap: wrap;
+    align-self: center;
+    padding: 10px 15px 15px 15px ;
+    background-color: transparent;
+}
+
+header .container .pages li a {
+    margin-left: 2.5rem;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white); 
+    transform: 0.3s;
+    align-self: center;
+    padding: 10px 15px 15px 15px ;
+    
+}
+
+header .container .pages li a:hover {
+    padding-bottom: 5px;
+    color: black;
+    background-color:var(--main-color);
+}
+
+header .container .icons span {
+    display: inline-block;
+    margin-top: 1px;
+    padding-left: 12px;
+}
+.dark_light svg
+{
+    width: 36px;
+    height: 36px;
+    
+}
+.btn_header , .dark_light
+{   
+    transition: scale .5s ease; /*khalf*/
+}
+.btn_header:hover ,.dark_light:hover
+{
+scale: 1.5;
+align-self: center;
+cursor: pointer;
+}
+.dark_mode
+{
+    background-color:#2F2F2F;
+}
+/* End Header */
+
+.landingSection {
+    position: relative;
+}
+
+.landingSection .mainHead {
+    width: 686px;
+    height: fit-content;
+    color: #FFF;
+    text-align: left;
+    font-family: "Kalameh Bold";
+    font-size: 96.0px;
+    font-weight: 200;
+    line-height: 110%;
+}
+
+.landingSection .mainHead span {
+    color: #ffd700;
+}
+
+.sofa
+{
+    transition: scale 0.5s ease;
+}
+.sofa:hover
+{
+    scale: 1.08;
+}
+.landingSection .sofa {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    left: 520px;
+    top: -54px;
+}
+
+.landingSection .landingContent {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 45%;
+    left: 18%;
+}
+
+.landingSection .btns {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.landingSection .btn1,
+.landingSection .btn2 {
+    width: 100px;
+    height: 55px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.landingSection .btn1 {
+    border-radius: 33px 0px 0px 0px;
+    background: #ffd700;
+    color: black;
+}
+
+.landingSection .btn2 {
+    border-radius: 0px 0px 33px 0px;
+    background: var(--white);
+    color: #1C1C1B;
+    text-align: center;
+    font-size: 15px;
+}
+
+.landingSection .paragraph {
+    width: 220px;
+    margin: 10px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 900;
+    word-wrap: break-word;
+}
+
+/* End Landing Section */
+
+/* Start Swiper Section */
+
+.swiper {
+    width: 100%;
+    height: 250 px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.swiper-wrapper img {
+    border-radius: 45px;
+    background:  url(../images/BGWeb.webp);
+    clip-path: fill-box;
+    margin: 40px;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+
+
+/* End Swiper Section */
+
+/* Start Discount Section */
+.discount {
+    width: 99vw;
+    height: 432px;
+    border-radius: 45px 45px 135px 45px;
+    background-color: rgb(202 179 149);
+}
+
+.discountHeading{
+    border-bottom: 2px solid var(--white);
+    line-height: 0.1em;
+}
+
+.discountHeading > span {
+    background-color: var(--main-color);
+    color: black;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.discountProducts {
+    height: 432px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product {
+    width: 215px;
+    height: 300px;
+    border-radius: 45px;
+    background: #FFF;
+    margin-top: -60px;
+    box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.29);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: scale 1s ease; /*khalf*/
+}
+
+.productImg {
+    width: 162px;
+    height: 200px;
+}
+
+.product:hover{ /*khalf*/
+    scale : 1.2;
+}
+.productDiscount {  
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-color);
+    text-align: center;
+    padding-top: 12px;
+    color: black;
+}
+
+.discountPeriod {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(241, 221, 195);
+    border-radius: 0 0 45px 45px;
+    text-align: center;
+    padding-top: 12px;
+    color: black;
+}
+/* End Discount Section */
+
+/* Start Catigories Section */
+.catigories .gridElements {
+    width: 1000px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "cat1 cat2"
+    "cat1 cat3"
+    "cat1 cat3"
+    ;
+    grid-gap: 30px;
+}
+
+.catigories .gridElements  .catigoryPic {
+    width: 260px;
+    height: 179px;
+}
+
+.catigories .gridElements  .catigoryPic {
+    width: 260px;
+    height: 179px;
+}
+
+.catigories .gridElements .catigory1 {
+    width: 500px;
+    height: 632px;
+    grid-area: cat1;
+    border-radius: 0px 0px 135px 0px;
+    background: #a17f62;
+    display: flex;
+    flex-direction: column;
+}
+
+.catigories .gridElements .catigory2 {
+    width: 500px;
+    height: 203px;
+    grid-area: cat2;
+    background: #2F2F2F;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.catigories .gridElements .catigory3 {
+    width: 500px;
+    height: 202px;
+    grid-area: cat3;
+    border-radius: 0px 0px 0px 45px;
+    background: var(--main-color);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    
+}
+
+.catigories .gridElements .catigoryName {
+    padding-top: 30px;
+    color: #FFF;
+    font-family: Kalameh;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+}
+
+.catigories .gridElements .catigory1 .catigoryName {
+    padding-top: 100px;
+    font-size: 70px;
+}
+
+.catigories .gridElements .catigory3 .catigoryName {
+    padding-top: 50px;
+    margin-left: 10px;
+    font-size: 60px;
+}
+
+/* End Catigories Section */
+
+/* Start Footer Section */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    background-color: rgba(25, 25, 25, 0.91);
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-logo {
+    grid-column: span 2;
+}
+
+.footer-logo div {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo span {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2.12px;
+    word-wrap:break-word;
+}
+
+.footer-logo p {
+    font-size: 14px;
+}
+
+.email-box {
+    grid-column: span 2; 
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.email-box input {
+    padding: 10px;
+    width: 100%; 
+    max-width: 200px; 
+    margin-right: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.email-box button {
+    padding: 10px;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 4px;
+    color: #1c1c1c;
+    cursor: pointer;
+}
+
+.footer-section, .footer-contact {
+    grid-column: span 1;
+}
+
+.footer-section h2, .footer-contact h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ffd700;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+/* End Footer Section */

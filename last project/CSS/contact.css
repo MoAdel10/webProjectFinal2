@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+background-image: linear-gradient(rgba(94, 57, 18, 0.4) ,rgba(94, 57, 18, 0.4)) ,url(../images/spacejoy-RqO6kwm4tZY-unsplash\ \(2\).jpg);
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+.contact-box{
+    margin-top: 140px;
+    background: #fefbfb;
+    display: flex;
+    box-shadow: 0px 0px 50px 3px rgb(0, 0, 0);
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: rgb(185, 171, 132);
+    color: white;
+}
+h1{
+    margin-bottom: 10px;
+}
+.container p {
+    margin-bottom: 40px;
+
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row.input-group{
+    flex-basis: 45%;
+}
+input
+{
+    padding-top: 3px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border:2px solid  rgb(185, 171, 132);
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+}
+button{
+    background: black;
+    width: 100px;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 2px 0px;
+    cursor: pointer;
+    color: rgb(223, 219, 219);
+}
+button:hover
+{
+    background-color: rgb(185, 171, 132) ;
+}
+.contact-left h3{
+    color: black;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+tr td :first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 20px;
+}
+.contact-box input
+{
+    border: 2px solid rgb(185, 171, 132);
+}

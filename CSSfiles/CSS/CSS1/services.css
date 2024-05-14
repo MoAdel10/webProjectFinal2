@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  background-image: linear-gradient(
+      rgba(94, 57, 18, 0.4),
+      rgba(94, 57, 18, 0.4)
+    ),
+    url("../images/spacejoy-RqO6kwm4tZY-unsplash\ \(1\).jpg");
+}
+:root {
+  --white: #f1f1f1;
+  --main-color: #FFB802;
+  --secondary-color: #FFD059;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: "Kalameh Bold", sans-serif;
+  overflow-x: hidden; /*khalf*/
+  
+}
+
+.bg {
+  background-image: url(../imgs/Rectangle\ 1.png);
+  position: absolute; 
+  width: 100vw;
+  height: 890px;
+  z-index: -2;
+}
+
+.container {
+  padding: 30px 10px;
+  margin: -5px auto;
+}
+
+/* Start Header */
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container>a {
+  margin-top: 6px;
+}
+
+header .container .pages {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header .container .pages li {
+  margin-top: 1px;
+  padding:  0 10px;
+  text-wrap: wrap;
+  align-self: center;
+  padding: 10px 15px 15px 15px ;
+  background-color: transparent;
+}
+
+header .container .pages li a {
+  margin-left: 2.5rem;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--white); 
+  transform: 0.3s;
+  align-self: center;
+  padding: 10px 15px 15px 15px ;
+  
+}
+
+header .container .pages li a:hover {
+  padding-bottom: 5px;
+  color: black;
+  background-color:var(--main-color);
+}
+
+header .container .icons span {
+  display: inline-block;
+  margin-top: 1px;
+  padding-left: 12px;
+}
+.dark_light svg
+{
+  width: 36px;
+  height: 36px;
+  
+}
+.btn_header , .dark_light
+{   
+  transition: scale .5s ease; /*khalf*/
+}
+.btn_header:hover ,.dark_light:hover
+{
+scale: 1.5;
+align-self: center;
+cursor: pointer;
+}
+.dark_mode
+{
+  background-color:#2F2F2F;
+}
+.container h1::after {
+  content: "";
+  background: #000000;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.row {
+  display: grid;
+  background-color: rgba(239, 216, 187, 0.8) ;
+  border-radius: 9px;
+  margin-top: 50px;
+  width: 400px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #000000;
+  margin-bottom: 20px ;
+  box-shadow: 0 5px 15px #00000099;
+}
+.service {
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.5s, background 0.5s;
+  border: 1px solid #000000;
+  
+}
+.service i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: chartreuse;
+}
+.service h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.service:hover {
+  background: #000000;
+  color: rgb(185, 171, 132);
+  transform: scale(1.05);
+}
+.service:hover i {
+  color: rgb(0, 0, 0);
+}
+h1 {
+  font-size: 50px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    background-color: rgba(25, 25, 25, 0.91);
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-logo {
+    grid-column: span 2;
+}
+
+.footer-logo div {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo span {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2.12px;
+    word-wrap:break-word;
+}
+
+.footer-logo p {
+    font-size: 14px;
+}
+
+.email-box {
+    grid-column: span 2; 
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.email-box input {
+    padding: 10px;
+    width: 100%; 
+    max-width: 200px; 
+    margin-right: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.email-box button {
+    padding: 10px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 4px;
+    color: #1c1c1c;
+    cursor: pointer;
+}
+
+.footer-section, .footer-contact {
+    grid-column: span 1;
+}
+
+.footer-section h2, .footer-contact h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ffd700;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    line-height:1.5;
+}
+.our_services h1
+{
+  margin-left:40% ;
+}
